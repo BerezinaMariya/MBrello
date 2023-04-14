@@ -1,5 +1,5 @@
-import { SUPABASE_URL, SUPABASE_ANON_KEY } from "./supabase";
 import { SENTRY_DSN } from "./sentry";
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from "./supabase";
 
 const IS_DEVTOOLS = import.meta.env.DEV;
 const IS_PRODUCTION = import.meta.env.PROD;
