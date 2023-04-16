@@ -1,0 +1,19 @@
+.root {
+  display: flex;
+  align-items: center;
+}
+
+.logomark {
+  width: 32px;
+  height: 32px;
+  border: 0.2px solid #d0d5dd;
+  border-radius: 8px;
+  background: linear-gradient(180deg, var(--color-base-white) 0%, #d0d5dd 100%),
+    var(--color-base-white);
+}
+
+.text {
+  margin-left: 9.5px;
+  color: var(--color-gray-900);
+  font: var(--font-text-lg-semibold);
+}
