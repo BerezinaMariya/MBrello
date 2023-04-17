@@ -23,6 +23,7 @@
   --shadow-xs: 0px 1px 2px rgb(16 24 40 / 5%);
 
   /* Typography */
+  --font-display-md-semibold: 600 36px/44px var(--font-sans);
   --font-display-sm-semibold: 600 30px/38px var(--font-sans);
   --font-display-xs-semibold: 600 24px/32px var(--font-sans);
   --font-text-lg-semibold: 600 18px/28px var(--font-sans);
