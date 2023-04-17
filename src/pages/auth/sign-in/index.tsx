@@ -17,11 +17,7 @@ const SignInPage: FC<Props> = ({ className }) => {
   return (
     <div className={cn(styles.root, className)}>
       <header className={styles.header}>
-        <img
-          className={styles.headerImg}
-          src={headerImg}
-          alt="Header background"
-        />
+        <img className={styles.image} src={headerImg} alt="Header background" />
       </header>
       <main className={styles.content}>
         <Logo className={styles.logo} />
