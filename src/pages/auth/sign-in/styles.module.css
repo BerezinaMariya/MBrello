@@ -66,27 +66,17 @@
   font: var(--font-text-md-regular);
 }
 
-.label {
-  display: flex;
-  flex-direction: column;
+.form {
   margin-top: 32px;
 }
 
-.span {
-  margin-bottom: 6px;
-  color: var(--color-gray-700);
-  font: var(--font-text-sm-medium);
+.input {
+  width: 343px;
 }
 
 .button {
   width: 343px;
   margin-top: 24px;
-  color: var(--color-base-white);
-  font: var(--font-text-md-semibold);
-}
-
-.input {
-  width: 343px;
 }
 
 .footer {

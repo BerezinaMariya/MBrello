@@ -9,6 +9,7 @@ interface Props {
   name?: string;
   placeholder?: string;
   required?: boolean;
+  text: string;
 }
 export const Input: FC<Props> = ({
   className,
@@ -16,14 +17,18 @@ export const Input: FC<Props> = ({
   name,
   placeholder,
   required,
+  text,
 }) => {
   return (
-    <input
-      className={cn(styles.root, className)}
-      type={type}
-      name={name}
-      placeholder={placeholder}
-      required={required}
-    />
+    <div className={cn(styles.root, className)}>
+      <span className={cn(styles.span, className)}>{text}</span>
+      <input
+        className={cn(styles.input, className)}
+        type={type}
+        name={name}
+        placeholder={placeholder}
+        required={required}
+      />
+    </div>
   );
 };

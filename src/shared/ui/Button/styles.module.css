@@ -9,6 +9,7 @@
   background: var(--color-primary-600);
   box-shadow: var(--shadow-xs);
   color: var(--color-base-white);
+  font: var(--font-text-md-semibold);
 }
 
 .root:hover {

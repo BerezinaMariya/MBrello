@@ -22,25 +22,21 @@ const UserInfoPage: FC<Props> = ({ className }) => {
           Skip
         </a>
         <form className={styles.form} action="#">
-          <div className={styles.label}>
-            <span className={styles.span}>First name</span>
-            <Input
-              className={styles.input}
-              type="text"
-              name="firstName"
-              placeholder="First name"
-              required
-            />
-          </div>
-          <div className={styles.label}>
-            <span className={styles.span}>Last name</span>
-            <Input
-              className={styles.input}
-              type="text"
-              name="lastName"
-              placeholder="Last name"
-            />
-          </div>
+          <Input
+            className={styles.fninput}
+            type="text"
+            name="firstName"
+            placeholder="First name"
+            required
+            text="First name"
+          />
+          <Input
+            className={styles.lninput}
+            type="text"
+            name="lastName"
+            placeholder="Last name"
+            text="Last name"
+          />
           <Button className={styles.button} type="submit">
             Continue
           </Button>
