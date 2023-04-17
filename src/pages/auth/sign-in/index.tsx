@@ -1,4 +1,5 @@
 import { FC } from "react";
+import cn from "classnames";
 
 import { Logo } from "@/shared/ui/Logo";
 import { Input } from "@/shared/ui/Input";
@@ -14,7 +15,7 @@ interface Props {
 
 const SignInPage: FC<Props> = ({ className }) => {
   return (
-    <div className={styles.root}>
+    <div className={cn(styles.root, className)}>
       <header className={styles.header}>
         <img
           className={styles.headerImg}
