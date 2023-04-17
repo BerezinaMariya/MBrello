@@ -1,0 +1,38 @@
+<svg width="751" height="63" viewBox="0 0 751 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="62.5" height="62.5" transform="translate(0.5)" fill="#84ADFF"/>
+<path d="M0.5 31.25H31.75C31.75 48.5089 17.7589 62.5 0.5 62.5V31.25Z" fill="white"/>
+<path d="M31.8109 0C49.0697 0 63.0608 13.9911 63.0608 31.25H31.8109V0Z" fill="#004EEB"/>
+<rect width="62.5" height="62.5" transform="translate(63)" fill="white"/>
+<path d="M125.561 31.25H94.3109C94.3109 48.5089 108.302 62.5 125.561 62.5V31.25Z" fill="#2970FF"/>
+<path d="M94.3109 0C111.57 0 125.561 13.9911 125.561 31.25H94.3109V0Z" fill="#004EEB"/>
+<rect width="62.5" height="62.5" transform="translate(125.5)" fill="#B2DDFF"/>
+<ellipse cx="156.689" cy="31.25" rx="15.625" ry="15.625" fill="white"/>
+<path d="M188 62.5H125.5L156.75 31.25L188 62.5Z" fill="#004EEB"/>
+<rect width="62.5" height="62.5" transform="translate(188)" fill="white"/>
+<rect x="219.311" y="31.25" width="31.25" height="31.25" fill="#2970FF"/>
+<rect x="188" width="31.25" height="31.25" fill="#B2DDFF"/>
+<rect width="62.5" height="62.5" transform="translate(250.5)" fill="#B2DDFF"/>
+<path d="M313 0V62.5H250.5L313 0Z" fill="#004EEB"/>
+<circle cx="281.689" cy="31.25" r="15.625" fill="white"/>
+<rect width="62.5" height="62.5" transform="translate(313)" fill="white"/>
+<path d="M344.311 31.25H375.561L344.311 62.5V31.25Z" fill="#2970FF"/>
+<path d="M344.25 0V31.25H313L344.25 0Z" fill="#2970FF"/>
+<rect width="62.5" height="62.5" transform="translate(375.5)" fill="white"/>
+<path d="M438 62.5C420.741 62.5 406.75 48.5089 406.75 31.25C406.75 13.9911 420.741 0 438 0V62.5Z" fill="#004EEB"/>
+<circle cx="391.125" cy="31.25" r="15.625" fill="#84ADFF"/>
+<rect width="62.5" height="62.5" transform="translate(438)" fill="#B2DDFF"/>
+<path d="M469.25 31.25L469.25 0L500.5 31.25L469.25 31.25Z" fill="white"/>
+<path d="M438 31.25L469.25 31.25L469.25 62.5L438 31.25Z" fill="#2970FF"/>
+<rect width="62.5" height="62.5" transform="translate(500.5)" fill="#84ADFF"/>
+<path d="M500.5 62.5C517.759 62.5 531.75 48.5089 531.75 31.25C531.75 13.9911 517.759 0 500.5 0V62.5Z" fill="#004EEB"/>
+<path d="M563 -3.27333e-06L563 62.5L531.75 31.25L563 -3.27333e-06Z" fill="white"/>
+<rect width="62.5" height="62.5" transform="translate(563)" fill="white"/>
+<path d="M563 -1.90735e-06L625.5 -4.63931e-06L625.5 62.5L563 -1.90735e-06Z" fill="#2970FF"/>
+<circle cx="594.25" cy="31.25" r="15.625" fill="#004EEB"/>
+<rect width="62.5" height="62.5" transform="translate(625.5)" fill="#84ADFF"/>
+<path d="M656.75 62.5C639.491 62.5 625.5 48.5089 625.5 31.25C625.5 13.9911 639.491 0 656.75 0V62.5Z" fill="#004EEB"/>
+<circle cx="656.75" cy="31.25" r="15.625" fill="white"/>
+<rect width="62.5" height="62.5" transform="translate(688)" fill="#B2DDFF"/>
+<path d="M719.25 31.25H750.5C750.5 48.5089 736.509 62.5 719.25 62.5V31.25Z" fill="#2970FF"/>
+<path d="M719.25 31.25C701.991 31.25 688 45.2411 688 62.5H719.25V31.25Z" fill="#004EEB"/>
+</svg>

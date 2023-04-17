@@ -5,6 +5,8 @@ import "@/shared/lib/sentry";
 
 import { App } from "@/app";
 
+import "./app/styles/index.css";
+
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <App />
