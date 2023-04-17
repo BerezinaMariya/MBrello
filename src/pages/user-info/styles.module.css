@@ -27,7 +27,7 @@
 
 .link {
   color: var(--color-primary-700);
-  font: var(--font-text-lg-regular);
+  font: var(--font-text-lg-medium);
   text-decoration: none;
 }
 
