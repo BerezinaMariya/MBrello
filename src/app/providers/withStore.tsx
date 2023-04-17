@@ -1,7 +1,5 @@
-import { ReactNode, createContext, useContext, Suspense } from "react";
+import { ReactNode, createContext, useContext } from "react";
 import { configure } from "mobx";
-import { BrowserRouter } from "react-router-dom";
-import { Loading } from "@/shared/ui/Loading";
 
 configure({
   enforceActions: "always",
