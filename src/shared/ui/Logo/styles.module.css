@@ -3,6 +3,10 @@
   align-items: center;
 }
 
+.logo {
+  position: relative;
+}
+
 .logomark {
   width: 32px;
   height: 32px;
@@ -10,6 +14,14 @@
   border-radius: 8px;
   background: linear-gradient(180deg, var(--color-base-white) 0%, #d0d5dd 100%),
     var(--color-base-white);
+}
+
+.logofilter {
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 0 8px 8px;
+  backdrop-filter: blur(2.5px);
+  background: rgb(255 255 255 / 20%);
 }
 
 .text {
