@@ -25,9 +25,9 @@
 <path d="M438 31.25L469.25 31.25L469.25 62.5L438 31.25Z" fill="#2970FF"/>
 <rect width="62.5" height="62.5" transform="translate(500.5)" fill="#84ADFF"/>
 <path d="M500.5 62.5C517.759 62.5 531.75 48.5089 531.75 31.25C531.75 13.9911 517.759 0 500.5 0V62.5Z" fill="#004EEB"/>
-<path d="M563 -3.27333e-06L563 62.5L531.75 31.25L563 -3.27333e-06Z" fill="white"/>
+<path d="M563 -1.36598e-06L563 62.5L531.75 31.25L563 -1.36598e-06Z" fill="white"/>
 <rect width="62.5" height="62.5" transform="translate(563)" fill="white"/>
-<path d="M563 -1.90735e-06L625.5 -4.63931e-06L625.5 62.5L563 -1.90735e-06Z" fill="#2970FF"/>
+<path d="M563 0L625.5 -2.73196e-06L625.5 62.5L563 0Z" fill="#2970FF"/>
 <circle cx="594.25" cy="31.25" r="15.625" fill="#004EEB"/>
 <rect width="62.5" height="62.5" transform="translate(625.5)" fill="#84ADFF"/>
 <path d="M656.75 62.5C639.491 62.5 625.5 48.5089 625.5 31.25C625.5 13.9911 639.491 0 656.75 0V62.5Z" fill="#004EEB"/>
