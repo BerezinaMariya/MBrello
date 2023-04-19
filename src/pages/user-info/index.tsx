@@ -14,7 +14,7 @@ const UserInfoPage: FC<Props> = ({ className }) => {
   return (
     <div className={cn(styles.root, className)}>
       <section className={styles.content}>
-        <h1 className={styles.headline}>Please, introduce yourself</h1>
+        <h1 className={styles.headLine}>Please, introduce yourself</h1>
         <p className={styles.description}>
           You can do this later on Profile page.
         </p>
@@ -23,7 +23,7 @@ const UserInfoPage: FC<Props> = ({ className }) => {
         </a>
         <form className={styles.form} action="#">
           <Input
-            className={styles.fninput}
+            className={styles.firstNameInput}
             type="text"
             name="firstName"
             placeholder="First name"
@@ -31,7 +31,7 @@ const UserInfoPage: FC<Props> = ({ className }) => {
             text="First name"
           />
           <Input
-            className={styles.lninput}
+            className={styles.lastNameInput}
             type="text"
             name="lastName"
             placeholder="Last name"
