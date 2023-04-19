@@ -7,6 +7,7 @@
 
   /* Colors */
   --color-primary-100: #f4ebff;
+  --color-primary-300: #84adff;
   --color-primary-600: #155eef;
   --color-primary-700: #004eeb;
   --color-gray-900: #101828;
@@ -14,6 +15,10 @@
   --color-gray-600: #475467;
   --color-gray-500: #667085;
   --color-gray-300: #d0d5dd;
+  --color-gray-50: #f9fafb;
+  --color-error-500: #f04438;
+  --color-error-300: #fda29b;
+  --color-error-100: #fee4e2;
 
   /* Base */
   --color-base-black: #000;

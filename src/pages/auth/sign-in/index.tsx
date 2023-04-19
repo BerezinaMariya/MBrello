@@ -37,7 +37,8 @@ const SignInPage: FC<Props> = ({ className }) => {
               name="email"
               placeholder="Enter your email"
               required
-              text="Email"
+              label="Email"
+              variant="md"
             />
             <Button className={styles.button} type="submit">
               Get started
