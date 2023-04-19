@@ -18,11 +18,16 @@
 }
 
 .description {
+  display: flex;
+  flex-direction: column;
+}
+
+.description-text {
   color: var(--color-gray-600);
   font: var(--font-text-lg-regular);
 }
 
-.link {
+.skip-link {
   color: var(--color-primary-700);
   font: var(--font-text-lg-medium);
   text-decoration: none;
@@ -54,11 +59,15 @@
   }
 
   .description {
-    display: inline;
+    flex-direction: row;
+  }
+
+  .description-text {
+    width: max-content;
     font: var(--font-text-xl-regular);
   }
 
-  .link {
+  .skip-link {
     margin-left: 6px;
     font: var(--font-text-xl-medium);
   }

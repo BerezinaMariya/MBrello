@@ -14,12 +14,14 @@ const UserInfoPage: FC<Props> = ({ className }) => {
   return (
     <main className={cn(styles.root, className)}>
       <h1 className={styles.headLine}>Please, introduce yourself</h1>
-      <p className={styles.description}>
-        You can do this later on Profile page.
-      </p>
-      <a className={styles.link} href="index.html">
-        Skip
-      </a>
+      <div className={styles.description}>
+        <p className={styles.descriptionText}>
+          You can do this later on Profile page.
+        </p>
+        <a className={styles.skipLink} href="/">
+          Skip
+        </a>
+      </div>
       <form className={styles.form} action="#">
         <Input
           className={styles.firstNameInput}
@@ -27,14 +29,14 @@ const UserInfoPage: FC<Props> = ({ className }) => {
           name="firstName"
           placeholder="First name"
           required
-          text="First name"
+          label="First name"
         />
         <Input
           className={styles.lastNameInput}
           type="text"
           name="lastName"
           placeholder="Last name"
-          text="Last name"
+          label="Last name"
         />
         <Button className={styles.button} type="submit">
           Continue
