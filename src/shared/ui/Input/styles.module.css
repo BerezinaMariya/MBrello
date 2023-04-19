@@ -45,7 +45,7 @@ root:disabled {
   font: var(--font-text-sm-regular);
 }
 
-.eroor {
+.error {
   display: block;
   margin-top: 6px;
   color: var(--color-error-500);
