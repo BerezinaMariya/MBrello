@@ -13,7 +13,7 @@
   margin: 0 auto;
 }
 
-.headline {
+.head-line {
   margin-bottom: 16px;
   color: var(--color-gray-900);
   font: var(--font-display-md-semibold);
@@ -72,12 +72,12 @@
       "button button";
   }
 
-  .fninput {
+  .first-name-input {
     max-width: 240px;
     grid-area: first-name-input;
   }
 
-  .lninput {
+  .last-name-input {
     max-width: 240px;
     grid-area: last-name-input;
   }
