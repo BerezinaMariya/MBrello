@@ -32,15 +32,18 @@
 }
 
 .form {
+  width: 100%;
+  min-width: 343px;
+  max-width: 512px;
   margin-top: 24px;
 }
 
 .input {
-  width: 343px;
+  width: 100%;
 }
 
 .button {
-  width: 343px;
+  width: 100%;
   margin-top: 32px;
 }
 
