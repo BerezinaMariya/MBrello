@@ -25,7 +25,6 @@ const UserInfoPage: FC<Props> = ({ className }) => {
       <form className={styles.form} action="#">
         <Input
           className={styles.firstNameInput}
-          type="text"
           name="FirstName"
           placeholder="First name"
           required
@@ -34,7 +33,6 @@ const UserInfoPage: FC<Props> = ({ className }) => {
         />
         <Input
           className={styles.lastNameInput}
-          type="text"
           name="LastName"
           placeholder="Last name"
           label="Last name"
