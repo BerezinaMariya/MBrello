@@ -26,17 +26,19 @@ const UserInfoPage: FC<Props> = ({ className }) => {
         <Input
           className={styles.firstNameInput}
           type="text"
-          name="firstName"
+          name="FirstName"
           placeholder="First name"
           required
           label="First name"
+          variant="md"
         />
         <Input
           className={styles.lastNameInput}
           type="text"
-          name="lastName"
+          name="LastName"
           placeholder="Last name"
           label="Last name"
+          variant="md"
         />
         <Button className={styles.button} type="submit">
           Continue
