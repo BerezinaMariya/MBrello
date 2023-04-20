@@ -10,7 +10,7 @@ interface Props {
   className?: string;
 }
 
-const UserInfoPage: FC<Props> = ({ className }) => {
+const OnboardingPage: FC<Props> = ({ className }) => {
   return (
     <main className={cn(styles.root, className)}>
       <h1 className={styles.headLine}>Please, introduce yourself</h1>
@@ -46,4 +46,4 @@ const UserInfoPage: FC<Props> = ({ className }) => {
   );
 };
 
-export default UserInfoPage;
+export default OnboardingPage;
