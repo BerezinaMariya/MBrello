@@ -41,7 +41,6 @@
 }
 
 .button {
-  width: 100%;
   margin-top: 32px;
 }
 
@@ -88,10 +87,7 @@
   }
 
   .button {
-    width: 512px;
     margin: 0;
-    color: var(--color-base-white);
-    font: var(--font-text-md-semibold);
     grid-area: button;
   }
 }
