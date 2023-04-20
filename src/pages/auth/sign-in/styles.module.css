@@ -146,17 +146,12 @@
 
   .link {
     display: flex;
-    cursor: pointer;
+    color: var(--color-gray-600);
+    font: var(--font-text-sm-regular);
     text-decoration: none;
   }
 
   .envelope {
-    display: inline-block;
-  }
-
-  .email {
-    margin-left: 9.33px;
-    color: var(--color-gray-600);
-    font: var(--font-text-sm-regular);
+    margin: auto 9.33px auto 0;
   }
 }

@@ -3,11 +3,11 @@ import cn from "classnames";
 
 import { Input } from "@/shared/ui/Input";
 import { Button } from "@/shared/ui/Button";
+import { Envelope } from "@/shared/ui/Icons";
 
 import styles from "./styles.module.css";
 import logomark from "./logomark.svg";
 import logofilter from "./logofilter.svg";
-import envelope from "./footer-envelope.svg";
 
 interface Props {
   className?: string;
@@ -53,12 +53,7 @@ const SignInPage: FC<Props> = ({ className }) => {
           href="mailto:help@mbrello.com"
           rel="noreferrer"
         >
-          <img
-            className={styles.envelope}
-            src={envelope}
-            alt="Envelope - link to support email"
-          />
-          <p className={styles.email}>help@mbrello.com</p>
+          <Envelope className={styles.envelope} /> help@mbrello.com
         </a>
       </footer>
     </div>
