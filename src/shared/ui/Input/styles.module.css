@@ -6,16 +6,18 @@
   box-shadow: var(--shadow-xs);
   color: var(--color-gray-900);
   font: var(--font-text-md-regular);
+  outline: none;
+  vertical-align: text-top;
 }
 
 root::placeholder {
   color: var(--color-gray-500);
+  text-align: right;
 }
 
 root:focus-visible {
   border-collapse: var(--color-primary-300);
   box-shadow: var(--shadow-xs), 0 0 0 4px var(--color-primary-100);
-  outline: none;
 }
 
 root:disabled {
