@@ -37,10 +37,6 @@
   width: 100%;
   min-width: 343px;
   max-width: 512px;
-  margin-top: 48px;
-}
-
-.last-name-input {
   margin-top: 24px;
 }
 
@@ -88,7 +84,6 @@
 
   .last-name-input {
     max-width: 240px;
-    margin-top: 0;
     grid-area: last-name-input;
   }
 

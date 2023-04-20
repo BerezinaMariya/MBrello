@@ -25,6 +25,7 @@ root:disabled {
 
 .label {
   display: block;
+  margin-top: 24px;
   margin-bottom: 6px;
   color: var(--color-gray-700);
   font: var(--font-text-sm-medium);
