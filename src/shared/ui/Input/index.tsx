@@ -22,7 +22,7 @@ export const Input: FC<Props> = ({
   label,
   hint,
   required,
-  variant,
+  variant = "sm",
   hasError,
   error,
   ...rest
