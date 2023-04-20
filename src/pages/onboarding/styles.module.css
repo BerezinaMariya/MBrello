@@ -1,0 +1,101 @@
+.root {
+  display: flex;
+  width: min-content;
+  min-width: 375px;
+  max-width: 1440px;
+  height: 100%;
+  min-height: 900px;
+  flex-direction: column;
+  padding: 64px 16px 0;
+  margin: 0 auto;
+}
+
+.head-line {
+  margin-bottom: 16px;
+  color: var(--color-gray-900);
+  font: var(--font-display-md-semibold);
+  letter-spacing: -0.02em;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
+
+.description-text {
+  color: var(--color-gray-600);
+  font: var(--font-text-lg-regular);
+}
+
+.skip-link {
+  color: var(--color-primary-700);
+  font: var(--font-text-lg-medium);
+  text-decoration: none;
+}
+
+.form {
+  width: 100%;
+  min-width: 343px;
+  max-width: 512px;
+  margin-top: 48px;
+}
+
+.last-name-input {
+  margin-top: 24px;
+}
+
+.button {
+  width: 100%;
+  margin-top: 32px;
+}
+
+@media (min-width: 768px) {
+  .root {
+    justify-content: center;
+  }
+
+  .head-line {
+    margin-bottom: 20px;
+  }
+
+  .description {
+    flex-direction: row;
+  }
+
+  .description-text {
+    width: max-content;
+    font: var(--font-text-xl-regular);
+  }
+
+  .skip-link {
+    margin-left: 6px;
+    font: var(--font-text-xl-medium);
+  }
+
+  .form {
+    display: grid;
+    max-width: 512px;
+    gap: 32px;
+    grid-template-areas:
+      "first-name-input last-name-input"
+      "button button";
+  }
+
+  .first-name-input {
+    max-width: 240px;
+    grid-area: first-name-input;
+  }
+
+  .last-name-input {
+    max-width: 240px;
+    grid-area: last-name-input;
+  }
+
+  .button {
+    width: 512px;
+    margin: 0;
+    color: var(--color-base-white);
+    font: var(--font-text-md-semibold);
+    grid-area: button;
+  }
+}
