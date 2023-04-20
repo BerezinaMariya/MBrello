@@ -3,12 +3,13 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  padding: 10px 18px;
+  padding: 11px 18px;
   border: 1px solid var(--color-primary-600);
   border-radius: 8px;
   background: var(--color-primary-600);
   box-shadow: var(--shadow-xs);
   color: var(--color-base-white);
+  font: var(--font-text-md-semibold);
 }
 
 .root:hover {

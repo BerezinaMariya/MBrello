@@ -31,16 +31,15 @@ const SignInPage: FC<Props> = ({ className }) => {
           <h1 className={styles.headline}>Sign in</h1>
           <p className={styles.description}>Start your 30-day free trial.</p>
           <form className={styles.form} action="#">
-            <div className={styles.label}>
-              <span className={styles.span}>Email</span>
-              <Input
-                className={styles.input}
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-              />
-            </div>
+            <Input
+              className={styles.input}
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+              label="Email"
+              variant="md"
+            />
             <Button className={styles.button} type="submit">
               Get started
             </Button>
