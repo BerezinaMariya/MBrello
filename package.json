@@ -28,8 +28,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.9.0",
-    "react-router-dom": "^6.9.0",
-    "wsl": "^1.0.0"
+    "react-router-dom": "^6.9.0"
   },
   "devDependencies": {
     "@testing-library/dom": "^9.2.0",
@@ -55,6 +54,7 @@
     "husky": "^8.0.3",
     "jsdom": "^21.1.1",
     "lint-staged": "^13.2.0",
+    "make": "^0.8.1",
     "postcss": "^8.4.21",
     "prettier": "^2.8.7",
     "react-scripts": "^5.0.1",
