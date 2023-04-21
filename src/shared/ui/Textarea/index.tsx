@@ -10,9 +10,13 @@ interface Props extends TextareaHTMLAttributes<HTMLTextAreaElement> {
 }
 
 export const Textarea: FC<Props> = ({ className, label, ...rest }) => {
-  return (
+  return label ? (
     <label className={className}>
       <span className={styles.label}>{label}</span>
+      <textarea className={cn(styles.root, className)} {...rest} />
+    </label>
+  ) : (
+    <label className={className}>
       <textarea className={cn(styles.root, className)} {...rest} />
     </label>
   );
