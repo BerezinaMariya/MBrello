@@ -2,6 +2,7 @@ import { FC } from "react";
 import cn from "classnames";
 
 import { Input } from "@/shared/ui/Input";
+import { Textarea } from "@/shared/ui/Textarea";
 import { Button } from "@/shared/ui/Button";
 import { MessageChatIcon, FacebookIcon, TwitterIcon } from "@/shared/ui/Icons";
 
@@ -29,12 +30,10 @@ const WorkspacesNewPage: FC<Props> = ({ className }) => {
             label="Workspace name"
             variant="md"
           />
-          <Input
-            className={styles.descriptionInput}
-            name="Description"
+          <Textarea
+            className={styles.descriptionTextarea}
             placeholder="Our team organizes everything here."
             label="Description"
-            variant="md"
           />
           <Button className={styles.button} type="submit">
             Get started
