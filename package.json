@@ -54,6 +54,7 @@
     "husky": "^8.0.3",
     "jsdom": "^21.1.1",
     "lint-staged": "^13.2.0",
+    "make": "^0.8.1",
     "postcss": "^8.4.21",
     "prettier": "^2.8.7",
     "react-scripts": "^5.0.1",
