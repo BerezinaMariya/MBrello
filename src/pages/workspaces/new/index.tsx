@@ -16,7 +16,7 @@ const WorkspacesNewPage: FC<Props> = ({ className }) => {
   return (
     <main className={cn(styles.root, className)}>
       <section className={styles.content}>
-        <h1 className={styles.headLine}>Let's build a Workspace</h1>
+        <h1 className={styles.headLine}>Let&apos;s build a Workspace</h1>
         <p className={styles.description}>
           Boost your productivity by making it easier for everyone to access
           boards in one location.
@@ -43,7 +43,8 @@ const WorkspacesNewPage: FC<Props> = ({ className }) => {
       <section className={styles.contacts}>
         <h2 className={styles.subHeadLine}>Get in touch</h2>
         <p className={styles.supportingText}>
-          We’d love to hear from you. Our friendly team is always here to chat.
+          We&apos;d love to hear from you. Our friendly team is always here to
+          chat.
         </p>
         <h3 className={styles.chatHeadLine}>
           <MessageChatIcon className={styles.messageChatIcon} />

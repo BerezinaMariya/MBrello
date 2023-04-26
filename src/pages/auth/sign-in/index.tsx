@@ -3,7 +3,7 @@ import cn from "classnames";
 
 import { Input } from "@/shared/ui/Input";
 import { Button } from "@/shared/ui/Button";
-import { Envelope } from "@/shared/ui/Icons";
+import { GoogleIcon, EnvelopeIcon } from "@/shared/ui/Icons";
 
 import styles from "./styles.module.css";
 import logomark from "./logomark.svg";
@@ -40,8 +40,16 @@ const SignInPage: FC<Props> = ({ className }) => {
               label="Email"
               variant="md"
             />
-            <Button className={styles.button} type="submit">
+            <Button className={styles.signUpButton} type="submit">
               Get started
+            </Button>
+            <Button
+              className={styles.signUpWithGoogleButton}
+              variant="gray"
+              type="submit"
+            >
+              <GoogleIcon className={styles.googleIcon} />
+              Sign up with Google
             </Button>
           </form>
         </section>
@@ -53,7 +61,8 @@ const SignInPage: FC<Props> = ({ className }) => {
           href="mailto:help@mbrello.com"
           rel="noreferrer"
         >
-          <Envelope className={styles.envelope} /> help@mbrello.com
+          <EnvelopeIcon className={styles.envelopeIcon} />
+          help@mbrello.com
         </a>
       </footer>
     </div>
