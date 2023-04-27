@@ -9,5 +9,3 @@ export const withRouter = (component: () => ReactNode) => () =>
       <Suspense fallback={<Loading />}>{component()}</Suspense>
     </BrowserRouter>
   );
-
-withRouter.displayName = "withRouter";

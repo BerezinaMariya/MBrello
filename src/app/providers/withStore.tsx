@@ -13,13 +13,9 @@ const store = {};
 
 const RootStoreContext = createContext<typeof store>(store);
 
-RootStoreContext.displayName = "RootStoreContext";
-
 export const useStore = () => {
   return useContext<typeof store>(RootStoreContext);
 };
-
-useStore.displayName = "useStore";
 
 export const withStore = (component: () => ReactNode) => () =>
   (
@@ -27,5 +23,3 @@ export const withStore = (component: () => ReactNode) => () =>
       {component()}
     </RootStoreContext.Provider>
   );
-
-withStore.displayName = "withStore";
