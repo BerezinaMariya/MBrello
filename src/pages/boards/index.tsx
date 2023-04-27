@@ -1,5 +1,4 @@
 import { FC, useState } from "react";
-import { action } from "mobx";
 import cn from "classnames";
 
 import { Logo } from "@/shared/ui/Logo";
@@ -28,12 +27,12 @@ const BoardsPage: FC<Props> = ({ className }) => {
         <button
           className={cn(styles.navMenuButton, styles.navMenuButtonOpen)}
           type="button"
-          onClick={action((e) => {
+          onClick={(e) => {
             e.currentTarget.classList.toggle(styles.navMenuButtonOpen);
             e.currentTarget.classList.toggle(styles.navMenuButtonClose);
             setNavigationMenuOpen(!isNavigationMenuOpen);
             console.log(e.currentTarget.classList);
-          })}
+          }}
         ></button>
       </header>
       <main className={styles.content}>
