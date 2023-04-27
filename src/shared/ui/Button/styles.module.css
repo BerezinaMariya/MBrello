@@ -18,18 +18,18 @@
   font: var(--font-text-md-semibold);
 }
 
-.variant-blue {
+.variant-primary {
   border-color: var(--color-primary-600);
   background-color: var(--color-primary-600);
   color: var(--color-base-white);
 }
 
-.variant-blue:hover {
+.variant-primary:hover {
   background: var(--color-primary-700);
   cursor: pointer;
 }
 
-.variant-blue:focus {
+.variant-primary:focus {
   /* Shadow/xs focused 4px primary-100 */
   box-shadow: var(--shadow-xs), 0 0 0 4px var(--color-primary-100);
 }

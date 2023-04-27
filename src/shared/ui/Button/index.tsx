@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 interface Props {
   className?: string;
   type?: "button" | "submit";
-  variant?: "blue" | "gray";
+  variant?: "primary" | "gray";
   size?: "sm" | "md";
   onClick?: MouseEventHandler<HTMLButtonElement>;
   children?: ReactNode;
@@ -15,7 +15,7 @@ interface Props {
 export const Button: FC<Props> = ({
   className,
   type,
-  variant = "blue",
+  variant = "primary",
   size = "md",
   onClick,
   children,
