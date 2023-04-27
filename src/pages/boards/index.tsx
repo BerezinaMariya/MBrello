@@ -18,7 +18,7 @@ interface Props {
   className?: string;
 }
 
-const WorkspacesBoardsPage: FC<Props> = ({ className }) => {
+const BoardsPage: FC<Props> = ({ className }) => {
   const [isNavigationMenuOpen, setNavigationMenuOpen] = useState(false);
 
   return (
@@ -26,7 +26,7 @@ const WorkspacesBoardsPage: FC<Props> = ({ className }) => {
       <header className={styles.header}>
         <Logo className={styles.headerLogo} text={"MBrello"} />
         <button
-          className={`${styles.navMenuButton} ${styles.navMenuButtonOpen}`}
+          className={cn(styles.navMenuButton, styles.navMenuButtonOpen)}
           type="button"
           onClick={action((e) => {
             e.currentTarget.classList.toggle(styles.navMenuButtonOpen);
@@ -79,4 +79,4 @@ const WorkspacesBoardsPage: FC<Props> = ({ className }) => {
   );
 };
 
-export default WorkspacesBoardsPage;
+export default BoardsPage;
