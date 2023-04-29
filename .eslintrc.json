@@ -1,8 +1,14 @@
 {
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
   "root": true,
   "parser": "@typescript-eslint/parser",
   "extends": [
     "eslint:recommended",
+    "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
     "plugin:jsx-a11y/recommended"
@@ -12,5 +18,9 @@
     "react",
     "jsx-a11y",
     "prettier"
-  ]
+  ],
+  "rules": {
+   "react/react-in-jsx-scope": "off",
+   "react/display-name": "off"
+  }
 }

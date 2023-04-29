@@ -1,4 +1,4 @@
-import { FC, ReactNode } from "react";
+import { FC, MouseEventHandler, ReactNode } from "react";
 import cn from "classnames";
 
 import styles from "./styles.module.css";
@@ -6,12 +6,31 @@ import styles from "./styles.module.css";
 interface Props {
   className?: string;
   type?: "button" | "submit";
-  children: ReactNode;
+  variant?: "primary" | "gray";
+  size?: "sm" | "md";
+  onClick?: MouseEventHandler<HTMLButtonElement>;
+  children?: ReactNode;
 }
 
-export const Button: FC<Props> = ({ className, type, children }) => {
+export const Button: FC<Props> = ({
+  className,
+  type,
+  variant = "primary",
+  size = "md",
+  onClick,
+  children,
+}) => {
   return (
-    <button className={cn(styles.root, className)} type={type}>
+    <button
+      className={cn(
+        styles.root,
+        styles[`variant-${variant}`],
+        styles[`size-${size}`],
+        className
+      )}
+      type={type}
+      onClick={onClick}
+    >
       {children}
     </button>
   );

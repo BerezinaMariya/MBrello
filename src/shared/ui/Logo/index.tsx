@@ -1,8 +1,8 @@
 import { FC } from "react";
 import cn from "classnames";
 
-import logomark from "./logomark.svg";
-import logofilter from "./logofilter.svg";
+import { ReactComponent as Logomark } from "./logomark.svg";
+import { ReactComponent as Logofilter } from "./logofilter.svg";
 
 import styles from "./styles.module.css";
 
@@ -15,12 +15,8 @@ export const Logo: FC<Props> = ({ className, text }) => {
   return (
     <div className={cn(styles.root, className)}>
       <div className={styles.logo}>
-        <img className={styles.logomark} src={logomark} alt="MBrello logo" />
-        <img
-          className={styles.logofilter}
-          src={logofilter}
-          alt="MBrello logo"
-        />
+        <Logomark className={styles.logomark} />
+        <Logofilter className={styles.logofilter} />
       </div>
       {text && <span className={styles.text}>{text}</span>}
     </div>

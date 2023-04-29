@@ -15,6 +15,8 @@
   --color-gray-600: #475467;
   --color-gray-500: #667085;
   --color-gray-300: #d0d5dd;
+  --color-gray-200: #eaecf0;
+  --color-gray-100: #f2f4f7;
   --color-gray-50: #f9fafb;
   --color-error-500: #f04438;
   --color-error-300: #fda29b;
@@ -39,6 +41,7 @@
   --font-text-lg-regular: 400 18px/28px var(--font-sans);
   --font-text-md-semibold: 600 16px/24px var(--font-sans);
   --font-text-md-regular: 400 16px/24px var(--font-sans);
+  --font-text-sm-semibold: 600 14px/20px var(--font-sans);
   --font-text-sm-medium: 500 14px/20px var(--font-sans);
   --font-text-sm-regular: 400 14px/20px var(--font-sans);
 }
