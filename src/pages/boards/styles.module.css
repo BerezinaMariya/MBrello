@@ -15,68 +15,6 @@
   padding: 32px 24px 0;
 }
 
-.user-area {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 30px;
-  border-bottom: 1px solid var(--color-gray-200);
-}
-
-.user-avatar-ring-icon {
-  display: inline-block;
-  width: 56px;
-  height: 56px;
-  vertical-align: middle;
-}
-
-.user-initials {
-  color: var(--color-gray-600);
-  font: var(--font-text-xl-medium);
-}
-
-.info-area {
-  display: flex;
-  width: 100%;
-}
-
-.user-name {
-  margin-left: 16px;
-  color: var(--color-gray-900);
-  font: var(--font-display-xs-semibold);
-}
-
-.user-account-status {
-  margin-top: 4px;
-  color: var(--color-gray-600);
-  font: var(--font-text-md-regular);
-}
-
-.buttons-area {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  margin-top: 16px;
-}
-
-.settings-button {
-  width: 30%;
-  min-width: 117px;
-}
-
-.invite-members-button {
-  width: 42%;
-  min-width: 165px;
-  margin-left: 12px;
-}
-
-.buttons-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-}
-
 .boards-area {
   display: flex;
   width: 100%;
@@ -128,28 +66,6 @@
   .content {
     padding: calc((100vw - 768px) / (1440 - 768) * (48 - 32) + 32px)
       calc((100vw - 768px) / (1440 - 768) * (112 - 24) + 24px) 0;
-  }
-
-  .user-name {
-    margin-left: 20px;
-  }
-
-  .user-area {
-    flex-direction: row;
-  }
-
-  .buttons-area {
-    width: max-content;
-    margin-top: 0;
-    margin-left: 16px;
-  }
-
-  .settings-button {
-    width: 117px;
-  }
-
-  .invite-members-button {
-    width: 165px;
   }
 
   .learn-more-button {

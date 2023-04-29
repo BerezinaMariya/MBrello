@@ -2,14 +2,9 @@ import { FC } from "react";
 import cn from "classnames";
 
 import { Header } from "@/shared/ui/Header";
+import { UserArea } from "@/shared/ui/Boards/UserArea";
 import { Button } from "@/shared/ui/Button";
-import {
-  AvatarRingIcon,
-  SettingsIcon,
-  InviteMembersIcon,
-  FeaturedIcon,
-  PlusIcon,
-} from "@/shared/ui/Icons";
+import { FeaturedIcon, PlusIcon } from "@/shared/ui/Icons";
 
 import styles from "./styles.module.css";
 
@@ -22,36 +17,7 @@ const BoardsPage: FC<Props> = ({ className }) => {
     <div className={cn(styles.root, className)}>
       <Header />
       <main className={styles.content}>
-        <div className={styles.userArea}>
-          <div className={styles.infoArea}>
-            <AvatarRingIcon className={styles.userAvatarRingIcon}>
-              <p className={styles.userInitials}>BM</p>
-            </AvatarRingIcon>
-            <p className={styles.userName}>
-              Berezina Mariya Alexeevna
-              <p className={styles.userAccountStatus}>Private</p>
-            </p>
-          </div>
-          <div className={styles.buttonsArea}>
-            <Button
-              className={styles.settingsButton}
-              type="button"
-              variant="gray"
-              size="sm"
-            >
-              <SettingsIcon className={styles.buttonsIcon} />
-              Settings
-            </Button>
-            <Button
-              className={styles.inviteMembersButton}
-              type="button"
-              size="sm"
-            >
-              <InviteMembersIcon className={styles.buttonsIcon} />
-              Invite members
-            </Button>
-          </div>
-        </div>
+        <UserArea />
         <div className={styles.boardsArea}>
           <FeaturedIcon className={styles.featuredIcon} />
           <h3 className={styles.newBoardHeadLine}>Start by creating a board</h3>
