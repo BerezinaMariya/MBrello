@@ -1,5 +1,6 @@
 .root {
-  display: flex;
+  display: inline-flex;
+  height: max-content;
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
