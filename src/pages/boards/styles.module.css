@@ -6,49 +6,6 @@
   margin: 0 auto;
 }
 
-.header {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px;
-  border-bottom: 1px solid var(--color-gray-200);
-}
-
-.header-logo {
-  margin-left: 4px;
-}
-
-.nav-menu-button {
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 8px;
-  background-color: var(--color-base-white);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.nav-menu-button-open {
-  background-image: url("@/shared/ui/Icons/nav-menu-button-icon.svg");
-  background-size: 18px 12px;
-}
-
-.nav-menu-button-close {
-  background-image: url("@/shared/ui/Icons/nav-menu-close-button-icon.svg");
-  background-size: 12px;
-}
-
-.nav-menu-button:hover {
-  background-color: var(--color-gray-50);
-  cursor: pointer;
-}
-
-.nav-menu-button:focus {
-  /* Focus ring/4px gray-100 */
-  box-shadow: 0 0 0 4px var(--color-gray-100);
-}
-
 .content {
   display: flex;
   width: 100%;
@@ -61,6 +18,10 @@
 .user-area {
   display: flex;
   width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--color-gray-200);
 }
 
 .user-avatar-ring-icon {
@@ -77,12 +38,11 @@
 
 .info-area {
   display: flex;
-  width: calc(100% - 56px);
-  flex-direction: column;
-  padding-left: 16px;
+  width: 100%;
 }
 
 .user-name {
+  margin-left: 16px;
   color: var(--color-gray-900);
   font: var(--font-display-xs-semibold);
 }
@@ -93,23 +53,10 @@
   font: var(--font-text-md-regular);
 }
 
-.settings-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-}
-
-.invite-members-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-}
-
-.button-area {
+.buttons-area {
   display: flex;
   width: 100%;
-  padding-bottom: 30px;
-  border-bottom: 1px solid var(--color-gray-200);
+  align-items: center;
   margin-top: 16px;
 }
 
@@ -124,10 +71,23 @@
   margin-left: 12px;
 }
 
+.buttons-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.boards-area {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+}
+
 .featured-icon {
   width: 58px;
   height: 58px;
-  margin-top: 48px;
 }
 
 .new-board-head-line {
@@ -137,20 +97,68 @@
 }
 
 .new-board-text {
+  max-width: 352px;
   margin-top: 4px;
   color: var(--color-gray-600);
   font: var(--font-text-sm-regular);
   text-align: center;
 }
 
+.board-buttons-area {
+  display: flex;
+  margin-top: 24px;
+}
+
+.learn-more-button {
+  display: none;
+}
+
 .new-board-button {
   width: 38%;
   min-width: 148px;
-  margin-top: 24px;
 }
 
 .plus-icon {
   width: 20px;
   height: 20px;
   margin-right: 8px;
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding: calc((100vw - 768px) / (1440 - 768) * (48 - 32) + 32px)
+      calc((100vw - 768px) / (1440 - 768) * (112 - 24) + 24px) 0;
+  }
+
+  .user-name {
+    margin-left: 20px;
+  }
+
+  .user-area {
+    flex-direction: row;
+  }
+
+  .buttons-area {
+    width: max-content;
+    margin-top: 0;
+    margin-left: 16px;
+  }
+
+  .settings-button {
+    width: 117px;
+  }
+
+  .invite-members-button {
+    width: 165px;
+  }
+
+  .learn-more-button {
+    display: inline-block;
+    width: 124px;
+  }
+
+  .new-board-button {
+    width: 148px;
+    margin-left: 12px;
+  }
 }
