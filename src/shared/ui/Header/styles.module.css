@@ -1,0 +1,153 @@
+.root {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.nav-menu-left-side {
+  margin-left: 4px;
+}
+
+.header-logo {
+  min-width: 142px;
+}
+
+.button {
+  display: none;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+}
+
+.boards-button {
+  width: 115px;
+  margin-left: 16px;
+  background-color: var(--color-gray-50);
+  color: var(--color-gray-900);
+}
+
+.boards-button:hover {
+  background-color: var(--color-gray-100);
+  cursor: pointer;
+}
+
+.boards-button:focus {
+  background-color: var(--color-gray-50);
+
+  /* Focus ring/4px gray-100 */
+  box-shadow: 0 0 0 4px var(--color-gray-100);
+}
+
+.members-button {
+  width: 134px;
+  margin-left: 4px;
+  background-color: var(--color-base-white);
+  color: var(--color-gray-700);
+}
+
+.members-button:hover {
+  background-color: var(--color-gray-50);
+  cursor: pointer;
+}
+
+.members-button:focus {
+  /* Focus ring/4px gray-100 */
+  box-shadow: 0 0 0 4px var(--color-gray-100);
+}
+
+.bell-button {
+  display: none;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  margin-right: 16px;
+  background-color: var(--color-base-white);
+}
+
+.bell-button:hover {
+  background-color: var(--color-gray-50);
+  cursor: pointer;
+}
+
+.bell-button:focus {
+  /* Focus ring/4px gray-100 */
+  box-shadow: 0 0 0 4px var(--color-gray-100);
+}
+
+.avatar-icon {
+  display: none;
+}
+
+.nav-menu-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--color-base-white);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav-menu-button-open {
+  background-image: url("@/shared/ui/Icons/nav-menu-button-icon.svg");
+  background-size: 18px 12px;
+}
+
+.nav-menu-button-close {
+  background-image: url("@/shared/ui/Icons/nav-menu-close-button-icon.svg");
+  background-size: 12px;
+}
+
+.nav-menu-button:hover {
+  background-color: var(--color-gray-50);
+  cursor: pointer;
+}
+
+.nav-menu-button:focus {
+  /* Focus ring/4px gray-100 */
+  box-shadow: 0 0 0 4px var(--color-gray-100);
+}
+
+@media (min-width: 768px) {
+  .root {
+    padding: calc((100vw - 768px) / (1440 - 768) * (16 - 12) + 12px)
+      calc((100vw - 768px) / (1440 - 768) * (112 - 12) + 12px);
+  }
+
+  .nav-menu-left-side {
+    display: flex;
+    margin-left: 0;
+  }
+
+  .nav-menu-right-side {
+    display: flex;
+  }
+
+  .button {
+    display: inline-flex;
+  }
+
+  .bell-button {
+    display: inline-flex;
+  }
+
+  .button-icon {
+    display: inline-block;
+    margin-right: 14px;
+  }
+
+  .avatar-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-menu-button {
+    display: none;
+  }
+}
