@@ -2,6 +2,7 @@ import { FC, useState } from "react";
 import cn from "classnames";
 
 import { Logo } from "@/shared/ui/Logo";
+import { Button } from "@/shared/ui/Button";
 
 import {
   BoardsIcon,
@@ -22,35 +23,46 @@ export const Header: FC<Props> = ({ className }) => {
     <header className={cn(styles.root, className)}>
       <div className={styles.navMenuLeftSide}>
         <Logo className={styles.headerLogo} text={"MBrello"} />
-        <button
+        <Button
           className={cn(styles.button, styles.boardsButton)}
           type="button"
+          variant="gray-50"
+          size="xs"
         >
           <BoardsIcon className={styles.buttonIcon} />
           Boards
-        </button>
-        <button
+        </Button>
+        <Button
           className={cn(styles.button, styles.membersButton)}
           type="button"
+          variant="white"
+          size="xs"
         >
           <MembersIcon className={styles.buttonIcon} />
           Members
-        </button>
+        </Button>
       </div>
       <div className={styles.navMenuRightSide}>
-        <button className={cn(styles.bellButton)} type="button">
+        <Button
+          className={styles.bellButton}
+          type="button"
+          variant="white"
+          size="xs"
+        >
           <BellIcon className={styles.bellIcon} />
-        </button>
+        </Button>
         <AvatarIcon className={styles.avatarIcon} />
-        <button
+        <Button
           className={cn(styles.navMenuButton, styles.navMenuButtonOpen)}
           type="button"
+          variant="white"
+          size="xs"
           onClick={(e) => {
             e.currentTarget.classList.toggle(styles.navMenuButtonOpen);
             e.currentTarget.classList.toggle(styles.navMenuButtonClose);
             setNavigationMenuOpen(!isNavigationMenuOpen);
           }}
-        ></button>
+        ></Button>
       </div>
     </header>
   );
