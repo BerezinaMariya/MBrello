@@ -35,7 +35,7 @@ const WorkspacesNewPage: FC<Props> = ({ className }) => {
             placeholder="Our team organizes everything here."
             label="Description"
           />
-          <Button className={styles.button} type="submit">
+          <Button className={styles.button} type="submit" size="xl">
             Get started
           </Button>
         </form>

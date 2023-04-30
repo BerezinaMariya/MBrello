@@ -38,7 +38,7 @@ const OnboardingPage: FC<Props> = ({ className }) => {
           label="Last name"
           variant="md"
         />
-        <Button className={styles.button} type="submit">
+        <Button className={styles.button} type="submit" size="xl">
           Continue
         </Button>
       </form>
