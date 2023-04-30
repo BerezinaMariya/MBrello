@@ -2,9 +2,11 @@ import { FC } from "react";
 import cn from "classnames";
 
 import { Header } from "@/shared/ui/Header";
-import { UserArea } from "@/shared/ui/Boards/UserArea";
+import { Board } from "@/shared/ui/Board";
+import { UserArea } from "@/shared/ui/BoardsUserArea";
 import { Button } from "@/shared/ui/Button";
-import { FeaturedIcon, PlusIcon } from "@/shared/ui/Icons";
+import { Input } from "@/shared/ui/Input";
+import { PlusCircleIcon } from "@/shared/ui/Icons";
 
 import styles from "./styles.module.css";
 
@@ -18,27 +20,32 @@ const BoardsPage: FC<Props> = ({ className }) => {
       <Header />
       <main className={styles.content}>
         <UserArea />
-        <div className={styles.boardsArea}>
-          <FeaturedIcon className={styles.featuredIcon} />
-          <h3 className={styles.newBoardHeadLine}>Start by creating a board</h3>
-          <p className={styles.newBoardText}>
-            Your boards will live here. Start creating by clicking on «New
-            board»
-          </p>
-          <div className={styles.boardButtonsArea}>
-            <Button
-              className={styles.learnMoreButton}
-              type="button"
-              variant="gray"
-            >
-              Learn more
-            </Button>
-            <Button className={styles.newBoardButton} type="button">
-              <PlusIcon className={styles.plusIcon} />
-              New board
-            </Button>
-          </div>
+        <div className={styles.searchArea}>
+          <h3 className={styles.searchHeadLine}>Boards</h3>
+          <Input
+            className={styles.searchInput}
+            type="search"
+            name="searchInput"
+            placeholder="Search"
+          />
         </div>
+        <ul className={styles.boardsArea}>
+          <li className={styles.newBoardItem}>
+            <Button
+              className={styles.newBoardButton}
+              type="button"
+              size="lg"
+              variant="white"
+            >
+              <PlusCircleIcon className={styles.plusCircleIcon} />
+              Create new board
+            </Button>
+          </li>
+          <Board />
+          <Board />
+          <Board />
+          <Board />
+        </ul>
       </main>
     </div>
   );

@@ -15,48 +15,46 @@
   padding: 32px 24px 0;
 }
 
-.boards-area {
+.search-area {
   display: flex;
   width: 100%;
   flex-direction: column;
-  align-items: center;
-  margin-top: 64px;
+  padding: 32px 0;
 }
 
-.featured-icon {
-  width: 58px;
-  height: 58px;
-}
-
-.new-board-head-line {
-  margin-top: 11px;
+.search-head-line {
+  margin-bottom: 16px;
   color: var(--color-gray-900);
-  font: var(--font-text-md-semibold);
+  font: var(--font-text-lg-semibold);
 }
 
-.new-board-text {
-  max-width: 352px;
-  margin-top: 4px;
-  color: var(--color-gray-600);
-  font: var(--font-text-sm-regular);
-  text-align: center;
+.boards-area {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  padding: 0;
+  gap: 24px;
+  grid-auto-flow: row;
+  list-style-type: none;
 }
 
-.board-buttons-area {
+.new-board-item {
   display: flex;
-  margin-top: 24px;
-}
-
-.learn-more-button {
-  display: none;
+  width: 100%;
+  min-height: 120px;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 20px 20px 24px;
+  border: 1px solid var(--color-gray-200);
+  border-radius: 16px;
 }
 
 .new-board-button {
-  width: 38%;
-  min-width: 148px;
+  width: 214px;
+  margin: 0 auto;
 }
 
-.plus-icon {
+.plus-circle-icon {
   width: 20px;
   height: 20px;
   margin-right: 8px;
@@ -68,13 +66,34 @@
       calc((100vw - 768px) / (1440 - 768) * (112 - 24) + 24px) 0;
   }
 
-  .learn-more-button {
-    display: inline-block;
-    width: 124px;
+  .search-area {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0;
   }
 
-  .new-board-button {
-    width: 148px;
-    margin-left: 12px;
+  .search-head-line {
+    margin-bottom: 0;
+  }
+
+  .search-input {
+    width: 320px;
+  }
+
+  .boards-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .boards-area {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .boards-area {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
