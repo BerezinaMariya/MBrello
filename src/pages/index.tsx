@@ -6,6 +6,8 @@ const SignIn = lazy(() => import("./auth/sign-in"));
 const Onboarding = lazy(() => import("./auth/onboarding"));
 const WorkspacesNew = lazy(() => import("./workspaces/new"));
 const Boards = lazy(() => import("./boards"));
+const BoardsIsEmpty = lazy(() => import("./boards/empty"));
+const BoardsNotFound = lazy(() => import("./boards/not-found"));
 
 export const Routing = () => {
   return (
@@ -15,6 +17,8 @@ export const Routing = () => {
       <Route path="/auth/onboarding" element={<Onboarding />} />
       <Route path="/workspaces/new" element={<WorkspacesNew />} />
       <Route path="/boards" element={<Boards />} />
+      <Route path="/boards/empty" element={<BoardsIsEmpty />} />
+      <Route path="/boards/not-found" element={<BoardsNotFound />} />
     </Routes>
   );
 };
