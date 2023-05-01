@@ -2,7 +2,7 @@ import { FC } from "react";
 import cn from "classnames";
 
 import { Header } from "@/shared/ui/Header";
-import { UserArea } from "@/shared/ui/BoardsUserArea";
+import { UserArea } from "@/shared/ui/WorkspaceHeader";
 import { Button } from "@/shared/ui/Button";
 import { Input } from "@/shared/ui/Input";
 import { SearchFeaturedIcon, PlusIcon } from "@/shared/ui/Icons";
