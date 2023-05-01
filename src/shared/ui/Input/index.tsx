@@ -39,6 +39,7 @@ export const Input: FC<Props> = ({
           styles[`variant-${variant}`],
           {
             [styles.hasError]: hasError,
+            [styles.searchInput]: type === "search",
           },
           className
         )}
@@ -61,8 +62,8 @@ export const Input: FC<Props> = ({
           styles[`variant-${variant}`],
           {
             [styles.hasError]: hasError,
+            [styles.searchInput]: type === "search",
           },
-          type === "search" && styles.searchInput,
           className
         )}
         type={type}
