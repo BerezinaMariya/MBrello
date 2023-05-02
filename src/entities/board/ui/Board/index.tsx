@@ -11,10 +11,11 @@ interface Props {
 }
 
 export const Board: FC<Props> = ({ className, children }) => {
+  const backgroundImage = randomBackgroundImage();
   return (
     <li
       className={cn(styles.root, className)}
-      style={{ backgroundImage: `url(${randomBackgroundImage()})` }}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <a className={styles.boardLink} href="/">
         <span className={styles.boardSpan}>
