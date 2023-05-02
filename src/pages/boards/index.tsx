@@ -2,7 +2,7 @@ import { FC } from "react";
 import cn from "classnames";
 
 import { Header } from "@/shared/ui/Header";
-import { Board } from "@/shared/ui/Board";
+import { Board } from "@/entities/board/ui/Board";
 import { UserArea } from "@/shared/ui/WorkspaceHeader";
 import { Button } from "@/shared/ui/Button";
 import { Input } from "@/shared/ui/Input";
