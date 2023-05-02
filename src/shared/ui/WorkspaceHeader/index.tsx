@@ -14,7 +14,7 @@ interface Props {
   className?: string;
 }
 
-export const UserArea: FC<Props> = ({ className }) => {
+export const WorkspaceHeader: FC<Props> = ({ className }) => {
   return (
     <div className={cn(styles.root, className)}>
       <div className={styles.infoArea}>

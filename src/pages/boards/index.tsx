@@ -3,7 +3,7 @@ import cn from "classnames";
 
 import { Header } from "@/shared/ui/Header";
 import { Board } from "@/entities/board/ui/Board";
-import { UserArea } from "@/shared/ui/WorkspaceHeader";
+import { WorkspaceHeader } from "@/shared/ui/WorkspaceHeader";
 import { Button } from "@/shared/ui/Button";
 import { Input } from "@/shared/ui/Input";
 import { PlusCircleIcon } from "@/shared/ui/Icons";
@@ -19,7 +19,7 @@ const BoardsPage: FC<Props> = ({ className }) => {
     <div className={cn(styles.root, className)}>
       <Header />
       <main className={styles.content}>
-        <UserArea />
+        <WorkspaceHeader />
         <div className={styles.searchArea}>
           <h3 className={styles.searchHeadLine}>Boards</h3>
           <Input

@@ -2,7 +2,7 @@ import { FC } from "react";
 import cn from "classnames";
 
 import { Header } from "@/shared/ui/Header";
-import { UserArea } from "@/shared/ui/WorkspaceHeader";
+import { WorkspaceHeader } from "@/shared/ui/WorkspaceHeader";
 import { Button } from "@/shared/ui/Button";
 import { PlusFeaturedIcon, PlusIcon } from "@/shared/ui/Icons";
 
@@ -12,12 +12,12 @@ interface Props {
   className?: string;
 }
 
-const BoardsisEmptyPage: FC<Props> = ({ className }) => {
+const BoardsIsEmptyPage: FC<Props> = ({ className }) => {
   return (
     <div className={cn(styles.root, className)}>
       <Header />
       <main className={styles.content}>
-        <UserArea />
+        <WorkspaceHeader />
         <div className={styles.boardsArea}>
           <PlusFeaturedIcon className={styles.plusFeaturedIcon} />
           <h3 className={styles.newBoardHeadLine}>Start by creating a board</h3>
@@ -44,4 +44,4 @@ const BoardsisEmptyPage: FC<Props> = ({ className }) => {
   );
 };
 
-export default BoardsisEmptyPage;
+export default BoardsIsEmptyPage;

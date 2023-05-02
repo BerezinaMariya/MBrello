@@ -2,7 +2,7 @@ import { FC } from "react";
 import cn from "classnames";
 
 import { Header } from "@/shared/ui/Header";
-import { UserArea } from "@/shared/ui/WorkspaceHeader";
+import { WorkspaceHeader } from "@/shared/ui/WorkspaceHeader";
 import { Button } from "@/shared/ui/Button";
 import { Input } from "@/shared/ui/Input";
 import { SearchFeaturedIcon, PlusIcon } from "@/shared/ui/Icons";
@@ -18,7 +18,7 @@ const BoardsNotFoundPage: FC<Props> = ({ className }) => {
     <div className={cn(styles.root, className)}>
       <Header />
       <main className={styles.content}>
-        <UserArea />
+        <WorkspaceHeader />
         <div className={styles.searchArea}>
           <h3 className={styles.searchHeadLine}>Boards</h3>
           <Input
