@@ -1,0 +1,106 @@
+.root {
+  display: inline-flex;
+  height: max-content;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.size-xs {
+  padding: 7px 12px;
+  font: var(--font-text-md-semibold);
+}
+
+.size-sm {
+  padding: 9px 16px;
+  font: var(--font-text-sm-semibold);
+}
+
+.size-md {
+  padding: 9px 17px;
+  font: var(--font-text-md-semibold);
+}
+
+.size-xl {
+  padding: 11px 20px;
+  font: var(--font-text-md-semibold);
+}
+
+.size-lg {
+  padding: 10px 16px;
+  font: var(--font-text-lg-medium);
+}
+
+.variant-primary {
+  border: 1px solid;
+  border-color: var(--color-primary-600);
+  border-radius: 8px;
+  background-color: var(--color-primary-600);
+  box-shadow: var(--shadow-xs);
+  color: var(--color-base-white);
+}
+
+.variant-primary:hover {
+  background: var(--color-primary-700);
+  cursor: pointer;
+}
+
+.variant-primary:focus {
+  /* Shadow/xs focused 4px primary-100 */
+  box-shadow: var(--shadow-xs), 0 0 0 4px var(--color-primary-100);
+}
+
+.variant-gray {
+  border: 1px solid;
+  border-color: var(--color-gray-300);
+  border-radius: 8px;
+  background-color: var(--color-base-white);
+  box-shadow: var(--shadow-xs);
+  color: var(--color-gray-700);
+}
+
+.variant-gray:hover {
+  background: var(--color-gray-50);
+  cursor: pointer;
+}
+
+.variant-gray:focus {
+  /* Shadow/xs focused 4px gray-100 */
+  box-shadow: var(--shadow-xs), 0 0 0 4px var(--color-gray-100);
+}
+
+.variant-gray-50 {
+  border: none;
+  border-radius: 6px;
+  background-color: var(--color-gray-50);
+  color: var(--color-gray-900);
+}
+
+.variant-gray-50:hover {
+  background-color: var(--color-gray-100);
+  cursor: pointer;
+}
+
+.variant-gray-50:focus {
+  background-color: var(--color-gray-50);
+
+  /* Focus ring/4px gray-100 */
+  box-shadow: 0 0 0 4px var(--color-gray-100);
+}
+
+.variant-white {
+  border: none;
+  border-radius: 6px;
+  background-color: var(--color-base-white);
+  color: var(--color-gray-700);
+}
+
+.variant-white:hover {
+  background-color: var(--color-gray-50);
+  cursor: pointer;
+}
+
+.variant-white:focus {
+  /* Focus ring/4px gray-100 */
+  box-shadow: 0 0 0 4px var(--color-gray-100);
+}

@@ -1,0 +1,134 @@
+.root {
+  width: 100%;
+  min-width: 375px;
+  max-width: 544px;
+  height: 100%;
+  min-height: 900px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  padding: 64px 16px 0;
+}
+
+.head-line {
+  max-width: 512px;
+  margin-bottom: 16px;
+  color: var(--color-gray-900);
+  font: var(--font-display-sm-semibold);
+}
+
+.description {
+  max-width: 512px;
+  color: var(--color-gray-600);
+  font: var(--font-text-lg-regular);
+}
+
+.form {
+  width: 100%;
+  min-width: 343px;
+  max-width: 512px;
+  margin-top: 24px;
+}
+
+.description-textarea {
+  min-height: 134px;
+}
+
+.button {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.contacts {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .root {
+    display: flex;
+    max-width: 2048px;
+    flex-direction: row-reverse;
+    margin-right: 0;
+  }
+
+  .content {
+    width: min-content;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .head-line {
+    margin-bottom: 20px;
+    font: var(--font-display-md-semibold);
+    letter-spacing: -0.02em;
+  }
+
+  .description {
+    width: max-content;
+    font: var(--font-text-xl-regular);
+  }
+
+  .contacts {
+    display: flex;
+    width: 100%;
+    max-width: 464px;
+    height: 100%;
+    flex-direction: column;
+    padding: 48px;
+    background: var(--color-gray-50);
+  }
+
+  .sub-head-line {
+    color: var(--color-gray-900);
+    font: var(--font-display-xs-semibold);
+  }
+
+  .supporting-text {
+    width: 100%;
+    margin-top: 16px;
+    color: var(--color-gray-600);
+    font: var(--font-text-lg-regular);
+  }
+
+  .message-chat-icon {
+    display: inline-block;
+    margin-right: 16px;
+    vertical-align: middle;
+  }
+
+  .chat-head-line {
+    margin-top: 32px;
+    color: var(--color-gray-900);
+    font: var(--font-text-xl-semibold);
+  }
+
+  .chat-text {
+    margin-top: 8px;
+    margin-left: 40px;
+    color: var(--color-gray-600);
+    font: var(--font-text-md-regular);
+  }
+
+  .link {
+    margin-top: 20px;
+    margin-left: 40px;
+    color: var(--color-primary-700);
+    font: var(--font-text-md-semibold);
+    text-decoration: none;
+  }
+
+  .nav-icons {
+    display: flex;
+    margin: auto auto 0 0;
+  }
+
+  .icon {
+    margin-right: 32px;
+  }
+}
