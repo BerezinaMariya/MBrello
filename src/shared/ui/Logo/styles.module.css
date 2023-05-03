@@ -27,5 +27,5 @@
 .text {
   margin-left: 9.5px;
   color: var(--color-gray-900);
-  font: var(--font-text-lg-semibold);
+  font: var(--font-text-xl-semibold);
 }

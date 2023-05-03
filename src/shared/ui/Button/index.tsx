@@ -6,8 +6,8 @@ import styles from "./styles.module.css";
 interface Props {
   className?: string;
   type?: "button" | "submit";
-  variant?: "primary" | "gray";
-  size?: "sm" | "md";
+  variant?: "primary" | "gray" | "gray-50" | "white";
+  size?: "xs" | "sm" | "md" | "xl" | "lg";
   onClick?: MouseEventHandler<HTMLButtonElement>;
   children?: ReactNode;
 }

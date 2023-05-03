@@ -2,6 +2,8 @@ import { FC, InputHTMLAttributes } from "react";
 
 import cn from "classnames";
 
+import { SearchInputIcon } from "@/shared/ui/Icons";
+
 import styles from "./styles.module.css";
 
 interface Props extends InputHTMLAttributes<HTMLInputElement> {
@@ -15,6 +17,7 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {
   hasError?: false;
   error?: string;
 }
+
 export const Input: FC<Props> = ({
   className,
   type,
@@ -28,14 +31,15 @@ export const Input: FC<Props> = ({
   ...rest
 }) => {
   return label ? (
-    <label className={className}>
+    <label className={styles.root}>
       <span className={styles.label}>{label}</span>
       <input
         className={cn(
-          styles.root,
+          styles.input,
           styles[`variant-${variant}`],
           {
             [styles.hasError]: hasError,
+            [styles.searchInput]: type === "search",
           },
           className
         )}
@@ -51,13 +55,14 @@ export const Input: FC<Props> = ({
       )}
     </label>
   ) : (
-    <>
+    <div className={styles.root}>
       <input
         className={cn(
-          styles.root,
+          styles.input,
           styles[`variant-${variant}`],
           {
             [styles.hasError]: hasError,
+            [styles.searchInput]: type === "search",
           },
           className
         )}
@@ -66,11 +71,14 @@ export const Input: FC<Props> = ({
         required={required}
         {...rest}
       />
+      {type === "search" && (
+        <SearchInputIcon className={styles.searchInputIcon} />
+      )}
       {hasError ? (
         <span className={styles.error}>{error}</span>
       ) : (
         hint && <span className={styles.hint}>{hint}</span>
       )}
-    </>
+    </div>
   );
 };
