@@ -1,35 +1,45 @@
-import { FC, InputHTMLAttributes } from "react";
-
 import cn from "classnames";
 
 import { SearchInputIcon } from "@/shared/ui/Icons";
 
 import styles from "./styles.module.css";
 
-interface Props extends InputHTMLAttributes<HTMLInputElement> {
+import type { ChangeEvent, InputHTMLAttributes } from "react";
+
+export interface Props<T extends string>
+  extends InputHTMLAttributes<HTMLInputElement> {
   className?: string;
-  type?: "email" | "text" | "search";
-  name: string;
+  onValue: ({ value, name }: { value: string; name: T }) => void;
+  value: string;
+  name: T;
   label?: string;
+  type?: "email" | "text" | "search";
   hint?: string;
   required?: boolean;
   variant?: "sm" | "md";
-  hasError?: false;
+  hasError?: boolean;
   error?: string;
 }
 
-export const Input: FC<Props> = ({
+export const Input = <T extends string>({
   className,
-  type,
+  onValue,
+  value,
   name,
   label,
+  type,
   hint,
   required,
   variant = "sm",
   hasError,
   error,
   ...rest
-}) => {
+}: Props<T>) => {
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const { value, name } = event.currentTarget;
+    onValue({ value, name: name as T });
+  };
+
   return label ? (
     <label className={styles.root}>
       <span className={styles.label}>{label}</span>
@@ -45,7 +55,9 @@ export const Input: FC<Props> = ({
         )}
         type={type}
         name={name}
+        value={value}
         required={required}
+        onChange={handleChange}
         {...rest}
       />
       {hasError ? (
@@ -68,7 +80,9 @@ export const Input: FC<Props> = ({
         )}
         type={type}
         name={name}
+        value={value}
         required={required}
+        onChange={handleChange}
         {...rest}
       />
       {type === "search" && (
