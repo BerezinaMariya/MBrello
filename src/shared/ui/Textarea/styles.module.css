@@ -32,3 +32,26 @@ root:disabled {
   color: var(--color-gray-700);
   font: var(--font-text-sm-medium);
 }
+
+.hint {
+  display: block;
+  margin-top: 6px;
+  color: var(--color-gray-500);
+  font: var(--font-text-sm-regular);
+}
+
+.error {
+  display: block;
+  margin-top: 6px;
+  color: var(--color-error-500);
+  font: var(--font-text-sm-regular);
+}
+
+.has-error {
+  border-color: var(--color-error-300);
+}
+
+.has-error:focus-visible {
+  border-color: var(--color-error-300);
+  box-shadow: var(--shadow-xs), 0 0 0 4px var(--color-error-100);
+}
