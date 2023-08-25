@@ -8,6 +8,7 @@ interface Props {
   type?: "button" | "submit";
   variant?: "primary" | "gray" | "gray-50" | "white";
   size?: "xs" | "sm" | "md" | "xl" | "lg";
+  disabled?: boolean;
   onClick?: MouseEventHandler<HTMLButtonElement>;
   children?: ReactNode;
 }
@@ -17,6 +18,7 @@ export const Button: FC<Props> = ({
   type,
   variant = "primary",
   size = "md",
+  disabled,
   onClick,
   children,
 }) => {
@@ -29,6 +31,7 @@ export const Button: FC<Props> = ({
         className
       )}
       type={type}
+      disabled={disabled}
       onClick={onClick}
     >
       {children}
